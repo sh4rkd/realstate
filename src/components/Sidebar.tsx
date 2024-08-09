@@ -42,13 +42,13 @@ const menuItems: MenuItem[] = [
 const Sidebar: React.FC = () => {
   return (
     <div className="bg-gray-100 h-screen p-4 font-inter">
-      <div className="bg-black text-white px-4 py-6 flex flex-col h-full rounded-[20px] shadow-lg">
+      <div className="bg-stone-950 text-white px-4 py-6 flex flex-col h-full rounded-[20px] shadow-lg">
         <div className="flex flex-col items-center mb-6">
           <div className="w-16 h-16 rounded-full overflow-hidden mb-3">
             <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
           </div>
-          <h2 className="font-bold text-base">Indica Watson</h2>
-          <p className="text-xs text-gray-400">Real Estate Builders</p>
+          <h2 className="font-bold text-base text-lg">Indica Watson</h2>
+          <p className="text-xs text-gray-500">Real Estate Builders</p>
         </div>
         <nav className="flex-grow">
           {menuItems.map((item, index) => (
@@ -56,7 +56,7 @@ const Sidebar: React.FC = () => {
               key={index}
               href="#"
               className={`flex items-center py-2 px-3 rounded-lg mb-1 relative ${
-                item.active ? 'text-white' : 'text-gray-400 hover:bg-gray-800'
+                item.active ? 'text-white bg-black' : 'text-gray-400 hover:bg-gray-800'
               }`}
             >
               <span className="mr-3">
@@ -64,7 +64,7 @@ const Sidebar: React.FC = () => {
               </span>
               <span className="text-xs">{item.label}</span>
               {item.notifications && (
-                <span className={`ml-auto ${item.label === 'Inbox' ? 'bg-orange-500' : 'bg-green-500'} text-white text-[10px] rounded-full px-1.5 py-0.5 ml-2`}>
+                <span className={`ml-auto ${item.label === 'Inbox' ? 'bg-orange-500 ml-12' : 'bg-green-500'} text-white text-[10px] rounded-full px-1.5 py-0.5 ml-3`}>
                   {item.notifications}
                 </span>
               )}
