@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
       <div className="mx-auto py-2 sm:px-6 lg:px-8">
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="flex justify-between items-center mb-6">
-            <span className="text-sm font-medium">249 Results</span>
+            <span className="text-xl font-medium">249 Results</span>
             <div className="flex items-center space-x-2">
               <span className="text-sm font-medium">Map View</span>
               <button className="w-12 h-6 bg-gray-300 rounded-full flex items-center transition-all duration-300 focus:outline-none shadow">
