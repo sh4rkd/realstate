@@ -2,10 +2,10 @@ import React from 'react';
 
 const RecentMessages: React.FC = () => {
   const messages = [
-    { name: 'James Benny', message: `Hey, Let me know if you're still available...` },
-    { name: 'William Chynita', message: 'Okay thanks' },
-    { name: 'Henry David', message: `Alright I'll get back to you ASAP` },
-    { name: 'Charlotte Flair', message: 'Sounds good buddy' },
+    { name: 'James Benny', message: `Hey, Let me know if you're still available...`, image: './src/assets/messages/james.png' },
+    { name: 'William Chynita', message: 'Okay thanks', image: './src/assets/messages/william.png' },
+    { name: 'Henry David', message: `Alright I'll get back to you ASAP`, image: './src/assets/messages/henry.png' },
+    { name: 'Charlotte Flair', message: 'Sounds good buddy', image: './src/assets/messages/charlotte.png' },
   ];
 
   return (
@@ -16,7 +16,7 @@ const RecentMessages: React.FC = () => {
       </div>
       {messages.map((msg, index) => (
         <div key={index} className="flex items-center mb-3">
-          <img src={`https://via.placeholder.com/40`} alt={msg.name} className="rounded-full mr-3" />
+          <img src={msg.image} alt={msg.name} className="rounded-full mr-3" />
           <div>
             <p className="font-medium">{msg.name}</p>
             <p className="text-sm text-gray-600">{msg.message}</p>
