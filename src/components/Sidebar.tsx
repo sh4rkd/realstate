@@ -41,7 +41,7 @@ const menuItems: MenuItem[] = [
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="bg-gray-100 h-screen p-4">
+    <div className="bg-gray-100 h-screen p-4 font-inter">
       <div className="bg-black text-white px-4 py-6 flex flex-col h-full rounded-[20px] shadow-lg">
         <div className="flex flex-col items-center mb-6">
           <div className="w-16 h-16 rounded-full overflow-hidden mb-3">

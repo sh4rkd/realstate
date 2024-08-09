@@ -7,7 +7,7 @@ import FilterOptions from '../components/FilterOptions';
 
 const Dashboard: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 font-quicksand">
       <Header />
       <div className="mx-auto py-2 sm:px-6 lg:px-8">
         <div className="bg-white p-6 rounded-lg shadow-sm">

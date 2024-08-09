@@ -19,7 +19,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ name, price, location, imag
           <div className="w-1/2 p-4 flex flex-col justify-between">
             <div>
               <h3 className="font-bold text-xl mb-2">$ {price}/ Year</h3>
-              <p className="text-gray-600 text-sm mb-2 flex items-center">
+              <p className="text-gray-600 text-sm mb-2 flex items-center font-inter">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
