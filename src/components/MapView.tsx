@@ -12,7 +12,7 @@ const MapView: React.FC = () => {
         </div>
       </div>
       <div className="bg-gray-200 h-full rounded-lg">
-        <img src={new URL('../assets/map.svg', import.meta.url).href} alt="" />
+        <img src={'/assets/map.svg'} alt="" />
       </div>
     </div>
   );

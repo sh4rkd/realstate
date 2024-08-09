@@ -31,7 +31,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ name, price, location, imag
             <p className="text-gray-500 text-sm">Overview</p>
           </div>
           <div className="py-3 px-3 cursor-cell">
-              <img src="./src/assets/like.svg" alt="" />
+              <img src="/assets/like.svg" alt="" />
           </div>
         </div>
       </div>
