@@ -2,10 +2,10 @@ import React from 'react';
 
 const RecentMessages: React.FC = () => {
   const messages = [
-    { name: 'James Benny', message: `Hey, Let me know if you're still available...`, image: './src/assets/messages/james.png' },
-    { name: 'William Chynita', message: 'Okay thanks', image: './src/assets/messages/william.png' },
-    { name: 'Henry David', message: `Alright I'll get back to you ASAP`, image: './src/assets/messages/henry.png' },
-    { name: 'Charlotte Flair', message: 'Sounds good buddy', image: './src/assets/messages/charlotte.png' },
+    { name: 'James Benny', message: `Hey, Let me know if you're still available...`, image: new URL('../assets/messages/james.png', import.meta.url).href },
+    { name: 'William Chynita', message: 'Okay thanks', image: new URL('../assets/messages/william.png', import.meta.url).href },
+    { name: 'Henry David', message: `Alright I'll get back to you ASAP`, image: new URL('../assets/messages/henry.png', import.meta.url).href },
+    { name: 'Charlotte Flair', message: 'Sounds good buddy', image: new URL('../assets/messages/charlotte.png', import.meta.url).href },
   ];
 
   return (

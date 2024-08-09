@@ -11,13 +11,13 @@ interface Property {
 
 const PropertyGrid: React.FC = () => {
   const properties: Property[] = [
-    { name: 'The Stables', price: '9540.99', location: 'Terry Lane, Golden CO 80403', image: './src/assets/properties/the_stables.svg' },
-    { name: 'The Old Rectory', price: '5999.99', location: 'Yule Street, Arvada CO 80007', image: './src/assets/properties/the_old_rectory.svg' },
-    { name: 'Holly Cottage', price: '2998.99', location: 'Alice Court, Annapolis MD 21401', image: './src/assets/properties/holly_cottage.svg' },
-    { name: 'Meadow View', price: '9540.99', location: 'Doane Street, Fremont CA 94538', image: './src/assets/properties/meadow_view.svg' },
-    { name: 'Greenacres', price: '5999.99', location: 'Terry Lane, Golden CO 80403', image: './src/assets/properties/greenacres.svg' },
-    { name: 'White Cottage', price: '2998.99', location: 'Yule Street, Arvada CO 80007', image: './src/assets/properties/white_cottage.svg' },
-    { name: 'Yearly Rental', price: '32,000', location: 'Doane Street, Fremont CA 94538', image: './src/assets/properties/yearly_rental.svg', isYearlyRental: true },
+    { name: 'The Stables', price: '9540.99', location: 'Terry Lane, Golden CO 80403', image: new URL('../assets/properties/the_stables.svg', import.meta.url).href },
+    { name: 'The Old Rectory', price: '5999.99', location: 'Yule Street, Arvada CO 80007', image: new URL('../assets/properties/the_old_rectory.svg', import.meta.url).href },
+    { name: 'Holly Cottage', price: '2998.99', location: 'Alice Court, Annapolis MD 21401', image: new URL('../assets/properties/holly_cottage.svg', import.meta.url).href },
+    { name: 'Meadow View', price: '9540.99', location: 'Doane Street, Fremont CA 94538', image: new URL('../assets/properties/meadow_view.svg', import.meta.url).href },
+    { name: 'Greenacres', price: '5999.99', location: 'Terry Lane, Golden CO 80403', image: new URL('../assets/properties/greenacres.svg', import.meta.url).href },
+    { name: 'White Cottage', price: '2998.99', location: 'Yule Street, Arvada CO 80007', image: new URL('../assets/properties/white_cottage.svg', import.meta.url).href },
+    { name: 'Yearly Rental', price: '32,000', location: 'Doane Street, Fremont CA 94538', image: new URL('../assets/properties/yearly_rental.svg', import.meta.url).href, isYearlyRental: true },
   ];
 
   return (

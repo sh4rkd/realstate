@@ -11,7 +11,7 @@ const FilterOptions: React.FC = () => {
         />
         <div className="absolute inset-y-0 right-0 flex items-center pr-3">
           <span className="text-gray-400 mr-2">|</span>
-          <img src="./src/assets/icons/search.svg" alt="Search" className="h-5 w-5" />
+          <img src={new URL('../assets/icons/search.svg', import.meta.url).href} alt="Search" className="h-5 w-5" />
         </div>
       </div>
       <div className="relative w-32">
@@ -21,7 +21,7 @@ const FilterOptions: React.FC = () => {
           className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full"
         />
         <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-          <img src="./src/assets/icons/symbol.svg" alt="Chevron Down" className="h-5 w-5 text-white" />
+          <img src={new URL('../assets/icons/symbol.svg', import.meta.url).href} alt="Chevron Down" className="h-5 w-5 text-white" />
         </div>
       </div>
       <div className="relative w-40">
@@ -29,7 +29,7 @@ const FilterOptions: React.FC = () => {
           <option>2-4 Beds</option>
         </select>
         <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-          <img src="./src/assets/icons/dropdown_active.svg" alt="Chevron Down" className="h-5 w-5 text-white" />
+          <img src={new URL('../assets/icons/dropdown_active.svg', import.meta.url).href} alt="Chevron Down" className="h-5 w-5 text-white" />
         </div>
       </div>
       <div className="relative flex-grow">
@@ -37,7 +37,7 @@ const FilterOptions: React.FC = () => {
           <option>Property Type</option>
         </select>
         <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-          <img src="./src/assets/icons/dropdown_inactive.svg" alt="Chevron Down" className="h-5 w-5 text-gray-400" />
+          <img src={new URL('../assets/icons/dropdown_inactive.svg', import.meta.url).href} alt="Chevron Down" className="h-5 w-5 text-gray-400" />
         </div>
       </div>
       <div className="relative flex-grow">
@@ -47,7 +47,7 @@ const FilterOptions: React.FC = () => {
           className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full"
         />
         <div className="absolute inset-y-0 right-0 flex items-center pr-3">
-          <img src="./src/assets/icons/settings.svg" alt="Filter" className="h-5 w-5 text-gray-400" />
+          <img src={new URL('../assets/icons/settings.svg', import.meta.url).href} alt="Filter" className="h-5 w-5 text-gray-400" />
         </div>
       </div>
     </div>
