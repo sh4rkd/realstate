@@ -64,7 +64,7 @@ const Sidebar: React.FC = () => {
               </span>
               <span className="text-xs">{item.label}</span>
               {item.notifications && (
-                <span className={`ml-auto ${item.label === 'Inbox' ? 'bg-orange-500 ml-12' : 'bg-green-500'} text-white text-[10px] rounded-full px-1.5 py-0.5 ml-3`}>
+                <span className={`ml-auto ${item.label === 'Inbox' ? 'bg-orange-500' : 'bg-green-500'} text-white text-[10px] rounded-full px-1.5 py-0.5`}>
                   {item.notifications}
                 </span>
               )}
