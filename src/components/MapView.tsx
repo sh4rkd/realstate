@@ -11,7 +11,9 @@ const MapView: React.FC = () => {
           <div className="w-1 h-1 bg-gray-500 rounded-full"></div>
         </div>
       </div>
-      <div className="bg-gray-200 h-64 rounded-lg"></div>
+      <div className="bg-gray-200 h-full rounded-lg">
+        <img src="./src/assets/map.svg" alt="" />
+      </div>
     </div>
   );
 };
